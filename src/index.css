@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { @apply bg-areia-100 font-sans text-terra-900 antialiased; overflow-x: clip; }
+a { @apply text-terra-500; }
+
+@layer components {
+  .btn { @apply inline-flex min-h-[44px] items-center justify-center rounded-full bg-terra-500 px-34 py-13 font-medium text-white transition-colors hover:bg-terra-600 hover:text-white; }
+  .btn-line { @apply inline-flex min-h-[44px] items-center justify-center rounded-full border border-terra-500 px-34 py-13 font-medium text-terra-500 transition-colors hover:bg-terra-500 hover:text-white; }
+  .eyebrow { @apply mb-13 text-[13px] uppercase tracking-[.26em] text-terra-500; }
+  .px-page { @apply px-[clamp(21px,5vw,89px)]; }
+}
+
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
